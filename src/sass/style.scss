@@ -31,11 +31,49 @@ ul {
 
 .wrapper {
     box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-    * {
+    >* {
         padding: 1em;
     }
 }
 
-.company-info{
+.company-info {
     background-color: #c9e6ff;
+    >h3,
+    ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+}
+
+.contact {
+    background: #f9feff;
+    >form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        >label {
+            display: block;
+        }
+        >p {
+            margin: 0;
+        }
+        button,
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.4em;
+            border: 1px solid #c9e6ff;
+        }
+        button {
+            background-color: #c9e6ff;
+            border: 0;
+            text-transform: uppercase;
+            border-radius: 5px;
+            &:hover {
+                background: #92bde7;
+                color: #fff;
+                transition: background-color 2s easeout;
+            }
+        }
+    }
 }

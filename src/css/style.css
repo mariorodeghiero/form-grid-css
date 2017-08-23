@@ -25,8 +25,38 @@ ul {
 
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
-  .wrapper * {
+  .wrapper > * {
     padding: 1em; }
 
 .company-info {
   background-color: #c9e6ff; }
+  .company-info > h3,
+  .company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+
+.contact {
+  background: #f9feff; }
+  .contact > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .contact > form > label {
+      display: block; }
+    .contact > form > p {
+      margin: 0; }
+    .contact > form button,
+    .contact > form input,
+    .contact > form textarea {
+      width: 100%;
+      padding: 0.4em;
+      border: 1px solid #c9e6ff; }
+    .contact > form button {
+      background-color: #c9e6ff;
+      border: 0;
+      text-transform: uppercase;
+      border-radius: 5px; }
+      .contact > form button:hover {
+        background: #92bde7;
+        color: #fff;
+        transition: background-color 2s easeout; }
